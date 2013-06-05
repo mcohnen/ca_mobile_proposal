@@ -1,0 +1,46 @@
+* Intro * (30s)
+	- If you have used brewster...
+
+* Why SMGridView? * (1:00 - 1:30)
+- Custom
+	- We tried other open source libraries, but none of them satisfied us, performance and functionality were not optimal. 
+	- Then we tried UITableView
+	
+- UITableView
+	- You need to add subviews inside a cell (annoying)
+	- Is only rows (not suitable for delete, move...)
+	- Is only vertical
+
+- UICollectionView
+	- This was not available when we started developing.
+	- Only ios6
+	- It is more complex to implement for a simple grid. 
+	
+* Features * (1:30)
+100 items
+90 size
+3 sections
+Vertical
+No loader
+No pagination
+Sort wait time 0
+Headers (non sticky)
+	
+	- Vertical Horizontal
+	- UITableViewCell not subview: use your own views
+	- Sections: like UITableView
+
+	- Pagination: Reverse ordering. Page changes notifier.
+	- Empty View: just set 0 items.
+	
+* How to use it? *
+- Similar to UITableView. 
+- 3 required in dataSource
+	- number of items in a section
+	- size of each item, to calculate positions and the views and contentSize of the scroll area
+	- the view: views are going to be asked when needed, and you should REUSE (dequeue)
+	
+- ReloadData: is calling your dataSource methods to learn about the positions of the views
+- Reuse: you can call with class (as we don't use a specific view type, we don't have ID's like UITableViews)
+
+* Next Steps *

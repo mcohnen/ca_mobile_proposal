@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-markdown>
+					# Code Academy for Mobile platform #
+					
+					### Challenges and ideas ###
+					
+				</section>
+				
+				<section data-markdown>
+					## Challenges ##
+					### Typing on the phone ###
+					<ul>
+						<li class="fragment">It is not as fast as a regular keyboard</li>
+						<li class="fragment">Accessing special characters (';', '{'...) requires more touches</li>
+						<li class="fragment">Keyboard takes up a lot of real estate space</li>
+						<li class="fragment">Custom Keyboard?</li>
+					</ul>
+				</section>
+				
+				<section data-markdown>
+					## Challenges ##
+					### Size of the screen is limited  ###
+					<ul>
+						<li class="fragment">100 characters per line as code guideline</li>
+						<li class="fragment">Horizontal Scroll?</li>
+						<li class="fragment">Rotate screen?</li>
+						<li class="fragment">Navigation controls</li>
+					</ul>
+				</section>
+				
+				<section data-markdown>
+					## Challenges ##
+					### Engagement and session time ###
+					<ul>
+						<li class="fragment">Fast exercises, aiming for a 5-10 min work before you get prize/satisfaction</li>
+						<li class="fragment">Connectivity issues: Can we code offline?</li>
+					</ul>
+				</section>
+				
+				<section data-markdown>
+					## Exercises ##
+					### Fill in gaps ###
+					<ul>
+						<li class="fragment">Have chunks of code with empty textboxes for the user to fill.</li>
+						<li class="fragment">iOS: how to achieve this?</li>
+						<li class="fragment">User does not have to type a lot</li>
+					</ul>
+				</section>
+				
+				<section data-markdown>
+					### Fill in gaps ###
+					<img src="images/fill-gaps.png"/>
+				</section>
+				
+				<section data-markdown>
+					## Exercises ##
+					### Move Boxes around ###
+					<ul>
+						<li class="fragment">No typing at all.</li>
+						<li class="fragment">Boxes could be used in the middle of normal text or just by dragging them</li>
+					</ul>
+				</section>
+				
+				<section data-markdown>
+					### Move Boxes around ###
+					<img src="images/boxes.png"/>
+				</section>
+				
+				<section data-markdown>
+					## Exercises ##
+					### Result of a piece of code ###
+					<ul>
+						<li class="fragment">Typing is minimal</li>
+						<li class="fragment">If we offer select options, typing would non existent</li>
+					</ul>
+				</section>
+				
+				<section data-markdown>
+					### Result of a piece of code ###
+					<img src="images/options.png"/>
+				</section>
+				
+				<section data-markdown>
+					## Flows ##
+					### Concept of lesson ###
+					<ul>
+						<li class="fragment">A lesson will contain a certain number of exercises</li>
+						<li class="fragment">A lesson should be completed within 10 minutes</li>
+						<li class="fragment">A lesson would be completed if a certain amount of exercises are correct</li>
+						<li class="fragment">API should be able to create random exercises that look similar and test the same concept.</li>
+						<li class="fragment">A lesson will contain a certain number of exercises</li>
+					</ul>
+				</section>
+				
+				<section data-markdown>
+					## Flows ##
+					### Objective C is a dynamic Language ###
+					<ul>
+						<li class="fragment">It is possible to create new classes, methods, etc...</li>
+						<li class="fragment">Code could run in the iPhone</li>
+						<li class="fragment">Creating shapes, changing colors, etc...</li>
+						<li class="fragment">Solution to space: use boxes again, but see results in your phone.</li>
+					</ul>
+				</section>
+				
+				<section data-markdown>
+					### Objective C is a dynamic Language ###
+					<img src="images/real-time.png"/>
+				</section>
+				
+				<section data-markdown>
+					## Flows ##
+					### Engage user ###
+					<ul>
+						<li class="fragment">Daily exercise</li>
+						<li class="fragment">Write your own exercises</li>
+					</ul>
+				</section>
+				
+				
+				<section data-markdown>
+					## Rest of interactions/features ##
+					### Q&A, groups, etc... ###
+					<ul>
+						<li class="fragment">Native vs HTML5 (UIWebview)</li>
+						<li class="fragment">Glossary: definitely UIWebview (caching, search?)</li>
+					</ul>
+				</section>
+				
+				<section data-markdown>
+					## Power of the mobile device ##
+					### Some crazier ideas ###
+					<ul>
+						<li class="fragment">Location Services?</li>
+						<li class="fragment">Push Notifications</li>
+						<li class="fragment">Contacts?</li>
+						<li class="fragment">Call for help?</li>
+					</ul>
+				</section>
+				
+				
+				<section data-markdown>
+					## ¡Gracias! ##
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+			
+			Reveal.addEventListener('slidechanged', function( event ) {
+				var logo = document.getElementById('bottom-logo');
+				if (event.indexh > 0) {
+					logo.style.display = 'block';
+				} else {
+					logo.style.display = 'none';
+				}
+			} );
+		</script>
+
+
+		<div class="logo" id="bottom-logo" style="display:none;position: absolute; bottom: 10px; left: 10px;">
+				<img src="images/codecademy-logo.png" width="75" height="75">
+				</div>
+	</body>
+</html>
